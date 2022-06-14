@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'counter.dart';
+import 'freePlacement.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Counter(title: 'Flutter Demo Home Page'),
+      home: const freePlacement(title: 'Flutter Demo Home Page'),
     );
   }
 }
