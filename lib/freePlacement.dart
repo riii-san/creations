@@ -19,6 +19,9 @@ class _freePlacementState extends State<freePlacement> {
   List<Cont> _contList = <Cont>[];
   late Cont _cont;
 
+  //late double deviceHeight = MediaQuery.of(context).size.height;
+  //late double deviceWidth = MediaQuery.of(context).size.width;
+
 
 
   @override
@@ -28,6 +31,8 @@ class _freePlacementState extends State<freePlacement> {
     _contList.add(_cont);
     _cont = Cont(const Offset(200,200),50,50);
     _contList.add(_cont);
+    //print(deviceHeight);
+    //print(deviceWidth);
   }
 
   @override
@@ -36,19 +41,55 @@ class _freePlacementState extends State<freePlacement> {
       body: Stack(
         children: <Widget>[
           Container(
-            alignment: Alignment(0.5, 0.0),
-            color: Colors.white70,
-            child: Text('Widget A'),
+            height: 500,
+            width: 150,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  color: Colors.white70,
+                  child: Text('Widget A'),
+                ),
+                Container(
+                  color: Colors.white70,
+                  child: Text('Widget B'),
+                ),
+              ],
+            ),
           ),
           Container(
-            alignment: Alignment(0.0, 0.5),
-            color: Colors.white70,
-            child: Text('Widget A'),
+            alignment: Alignment(0.0,-0.5),
+            child: SizedBox(
+              width:  70,
+              height: 70,
+              child: ElevatedButton(
+                onPressed: (){},
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    primary: Colors.blue.shade300
+                ),
+                child: const Text('AC',style: TextStyle(color: Colors.white,fontSize: 20),),
+              ),
+            ),
           ),
           Container(
-            alignment: Alignment(0.0, 0.0),
-            color: Colors.white70,
-            child: Text('Widget A'),
+            alignment: Alignment(0.0,-0.3),
+            child: SizedBox(
+              width:  70,
+              height: 70,
+              child: ElevatedButton(
+                onPressed: (){},
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    primary: Colors.blue.shade300
+                ),
+                child: const Text('AAA',style: TextStyle(color: Colors.white,fontSize: 20),),
+              ),
+            ),
           ),
           returnFreePositionContainer(_contList[0]),
           returnFreePositionContainer(_contList[1]),
@@ -56,6 +97,7 @@ class _freePlacementState extends State<freePlacement> {
       ),
     );
   }
+
 
   Widget returnFreePositionContainer(Cont _tempCont){
     return Positioned(
