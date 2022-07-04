@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
+import 'config.dart';
 
 // ignore: camel_case_types
 class freePlacement extends StatefulWidget {
@@ -40,23 +40,6 @@ class _freePlacementState extends State<freePlacement> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          Container(
-            height: 500,
-            width: 150,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  color: Colors.white70,
-                  child: Text('Widget A'),
-                ),
-                Container(
-                  color: Colors.white70,
-                  child: Text('Widget B'),
-                ),
-              ],
-            ),
-          ),
           Container(
             alignment: Alignment(0.0,-0.5),
             child: SizedBox(
