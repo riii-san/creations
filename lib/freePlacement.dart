@@ -127,7 +127,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 2 - _bannerHeight - _space * 1,
-              left: _space * 1 + _containerSize * 0,
+              left: _sizeSpace,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -147,7 +147,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 2 - _bannerHeight - _space * 1,
-              left: _space * 2 + _containerSize * 1,
+              left: _sizeSpace + _space * 1 + _containerSize * 1,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -167,7 +167,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 2 - _bannerHeight - _space * 1,
-              left: _space * 3 + _containerSize * 2,
+              left: _sizeSpace + _space * 2 + _containerSize * 2,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -187,7 +187,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 2 - _bannerHeight - _space * 1,
-              left: _space * 4 + _containerSize * 3,
+              left: _sizeSpace + _space * 3 + _containerSize * 3,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -207,7 +207,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 3 - _bannerHeight - _space * 2,
-              left: _space * 1 + _containerSize * 0,
+              left: _sizeSpace,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -227,7 +227,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 3 - _bannerHeight - _space * 2,
-              left: _space * 2 + _containerSize * 1,
+              left: _sizeSpace + _space * 1 + _containerSize * 1,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -247,7 +247,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 3 - _bannerHeight - _space * 2,
-              left: _space * 3 + _containerSize * 2,
+              left: _sizeSpace + _space * 2 + _containerSize * 2,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -267,7 +267,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 3 - _bannerHeight - _space * 2,
-              left: _space * 4 + _containerSize * 3,
+              left: _sizeSpace + _space * 3 + _containerSize * 3,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -287,7 +287,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 4 - _bannerHeight - _space * 3,
-              left: _space * 1 + _containerSize * 0,
+              left: _sizeSpace,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -307,7 +307,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 4 - _bannerHeight - _space * 3,
-              left: _space * 2 + _containerSize * 1,
+              left: _sizeSpace + _space * 1 + _containerSize * 1,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -327,7 +327,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 4 - _bannerHeight - _space * 3,
-              left: _space * 3 + _containerSize * 2,
+              left: _sizeSpace + _space * 2 + _containerSize * 2,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -347,7 +347,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 4 - _bannerHeight - _space * 3,
-              left: _space * 4 + _containerSize * 3,
+              left: _sizeSpace + _space * 3 + _containerSize * 3,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -367,7 +367,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 5 - _bannerHeight - _space * 4,
-              left: _space * 1 + _containerSize * 0,
+              left: _sizeSpace,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -387,7 +387,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 5 - _bannerHeight - _space * 4,
-              left: _space * 2 + _containerSize * 1,
+              left: _sizeSpace + _space * 1 + _containerSize * 1,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -407,7 +407,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 5 - _bannerHeight - _space * 4,
-              left: _space * 3 + _containerSize * 2,
+              left: _sizeSpace + _space * 2 + _containerSize * 2,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -427,7 +427,7 @@ class _freePlacementState extends State<freePlacement> {
           Container(
             child: Positioned(
               top: _deviceHeight - _containerSize * 5 - _bannerHeight - _space * 4,
-              left: _space * 4 + _containerSize * 3,
+              left: _sizeSpace + _space * 3 + _containerSize * 3,
               width: _containerSize,
               height: _containerSize,
               child: SizedBox(
@@ -444,6 +444,7 @@ class _freePlacementState extends State<freePlacement> {
               ),
             ),
           ),
+
           returnFreePositionContainer(_contList[0]),
           //returnFreePositionContainer(_contList[1]),
         ],
