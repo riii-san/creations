@@ -444,7 +444,38 @@ class _freePlacementState extends State<freePlacement> {
               ),
             ),
           ),
+          Container(
+            child: Positioned(
+              top: _deviceHeight - _containerSize * 5.7 - _bannerHeight - _space * 5,
+              left: _sizeSpace,
+              width: _containerSize * 4 + _space * 3,
+              height: _containerSize * 0.7,
+              child: SizedBox(
+                child: ElevatedButton(
+                  onPressed: (){},
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      primary: Colors.blue.shade300
+                  ),
+                  child: const Text('AC',style: TextStyle(color: Colors.white,fontSize: 20),),
+                ),
+              ),
+            ),
+          ),
 
+          Positioned(
+              top: _deviceHeight - _containerSize * 5 - _bannerHeight - _space * 4,
+              left: _sizeSpace,
+              width: _deviceWidth,
+              height: _deviceHeight * 0.5,
+              child: DragTarget<String>(
+                builder: (context, accepted, rejected){
+                  return const SizedBox();
+                },
+              )
+          ),
           returnFreePositionContainer(_contList[0]),
           //returnFreePositionContainer(_contList[1]),
         ],
